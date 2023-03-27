@@ -1,0 +1,21 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/reggie
+      username: root
+      password: 04161318
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+#    ??????????????????????????????????????
+    map-underscore-to-camel-case: true
+  global-config:
+    db-config:
+      id-type: assign_id   # ???? ?????
+
+# 图片转存位置
+reggie:
+  path: "/src/main/resources/backend/images/upload/"
