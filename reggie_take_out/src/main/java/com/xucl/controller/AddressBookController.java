@@ -6,6 +6,7 @@ import com.xucl.common.BaseContext;
 import com.xucl.common.R;
 import com.xucl.entity.AddressBook;
 import com.xucl.service.AddressBookService;
+import io.swagger.annotations.Api;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -20,6 +21,7 @@ import java.util.List;
 @Slf4j
 @RestController
 @RequestMapping("/addressBook")
+@Api("收货地址Controller")
 public class AddressBookController {
     @Autowired
     private AddressBookService addressBookService;
